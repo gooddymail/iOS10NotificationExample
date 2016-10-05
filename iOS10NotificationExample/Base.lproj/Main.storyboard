@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q5E-hs-5gx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="G7k-1b-8a2">
+            <objects>
+                <viewController id="Q5E-hs-5gx" customClass="ViewController" customModule="iOS10NotificationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hv-6L-CII"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4Z-V4-MPg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWf-Mz-GOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUTORIAL REMINDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixx-nZ-CmX">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A handy app to remind you to do your tutorial reading at AppCoda!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN1-u0-1Jl">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-Nh-i8n">
+                                <date key="date" timeIntervalSinceReferenceDate="495410641.10721803">
+                                    <!--2016-09-12 22:04:01 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerDidSelectNewDate:" destination="Q5E-hs-5gx" eventType="valueChanged" id="vTr-ld-4gO"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will remind you to read a tutorial at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmP-9p-KYJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jmP-9p-KYJ" firstAttribute="centerX" secondItem="AWf-Mz-GOZ" secondAttribute="centerX" id="2BW-Kq-29w"/>
+                            <constraint firstItem="iN1-u0-1Jl" firstAttribute="leading" secondItem="AWf-Mz-GOZ" secondAttribute="leading" constant="8" id="2X7-I9-7MY"/>
+                            <constraint firstItem="bhG-Nh-i8n" firstAttribute="top" secondItem="jmP-9p-KYJ" secondAttribute="bottom" constant="8" id="3zo-Ru-5Vy"/>
+                            <constraint firstAttribute="trailing" secondItem="bhG-Nh-i8n" secondAttribute="trailing" id="6Kz-0c-UBp"/>
+                            <constraint firstItem="Ixx-nZ-CmX" firstAttribute="top" secondItem="3hv-6L-CII" secondAttribute="bottom" constant="8" id="6y3-XD-muy"/>
+                            <constraint firstAttribute="trailing" secondItem="Ixx-nZ-CmX" secondAttribute="trailing" constant="8" id="UWV-qh-wq7"/>
+                            <constraint firstItem="iN1-u0-1Jl" firstAttribute="top" secondItem="Ixx-nZ-CmX" secondAttribute="bottom" constant="8" id="UYY-Dh-qVe"/>
+                            <constraint firstItem="bhG-Nh-i8n" firstAttribute="leading" secondItem="AWf-Mz-GOZ" secondAttribute="leading" id="hhd-yf-nyi"/>
+                            <constraint firstAttribute="trailing" secondItem="iN1-u0-1Jl" secondAttribute="trailing" constant="8" id="po1-jg-AgV"/>
+                            <constraint firstItem="iN1-u0-1Jl" firstAttribute="top" secondItem="Ixx-nZ-CmX" secondAttribute="bottom" constant="8" id="uA1-FO-SUd"/>
+                            <constraint firstItem="M4Z-V4-MPg" firstAttribute="top" secondItem="bhG-Nh-i8n" secondAttribute="bottom" id="y4b-Jy-Z3v"/>
+                            <constraint firstItem="Ixx-nZ-CmX" firstAttribute="leading" secondItem="AWf-Mz-GOZ" secondAttribute="leading" constant="8" id="zLx-c5-ILi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJA-PQ-1gK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="-52"/>
+        </scene>
+    </scenes>
+</document>
